@@ -1,4 +1,12 @@
-# corti-pulse
+# Contract Hunter
+
+The initial stages of a React project.
+Currently contains login, register, account recovery and a dashboard.
+
+- /login
+- /register
+- /account-recovery
+- /app/dashboard
 
 ## development
 
