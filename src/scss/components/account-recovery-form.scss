@@ -1,0 +1,48 @@
+@import './src/scss/mixins/breakpoints';
+@import './src/scss/components/logged-out-form';
+
+.header {
+    composes: section;
+}
+
+.content {
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #f2f2f2;
+    overflow: hidden;
+    padding: 45px 0;
+}
+
+.footer {
+    composes: section;
+}
+
+.slider {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    transition: all .3s .3s ease;
+}
+
+.slide {
+    padding: 0 75px;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    visibility: hidden;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.slideActive {
+    composes: slide;
+    opacity: 1;
+    visibility: visible;
+}
+
+.login {
+    composes: footerLink;
+}
+
+.register {
+    composes: footerLink;
+}

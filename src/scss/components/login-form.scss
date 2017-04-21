@@ -1,0 +1,31 @@
+@import 'src/scss/mixins/breakpoints';
+@import 'src/scss/components/logged-out-form';
+
+.header {
+    composes: section;
+}
+
+.content {
+    composes: section;
+}
+
+.footer {
+    composes: section;
+}
+
+.button {
+    padding: 0;
+}
+
+.link {
+    display: block;
+    padding: 18px 25px;
+}
+
+.resetPassword {
+    composes: footerLink;
+}
+
+.register {
+    composes: footerLink;
+}

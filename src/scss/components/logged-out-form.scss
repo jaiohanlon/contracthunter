@@ -1,0 +1,107 @@
+@import './src/scss/mixins/breakpoints';
+@import './src/scss/variables/colours';
+
+.form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: #e5e5e8 0 0 45px -5px;
+    transition: all .3s ease;
+
+    @include small-up {
+        width: 450px;
+        margin: 50px 0;
+    }
+
+    @include medium-up {
+        margin: 100px 0;
+    }
+}
+
+.formLarge {
+    composes: form;
+    width: 850px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 55px;
+
+    @include small-up {
+        padding: 45px 75px;
+    }
+}
+
+.header {
+    border-bottom: 1px solid #f2f2f5;
+    text-align: center;
+}
+
+.title {
+    padding: 0;
+    margin: 0 0 .8rem 0;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #44444c
+}
+
+.helpText {
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    color: #bbb;
+    font-size: .85rem;
+    font-weight: 100;
+    letter-spacing: .4px;
+
+    @include small-up {
+        padding: 0 40px;
+    }
+}
+
+.content {
+    background-color: #fcfcff;
+    border-bottom: 1px solid #f2f2f5;
+}
+
+.footer {
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    display: block;
+}
+
+.footerLinks {
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 0 0 3px 3px;
+}
+
+.footerLink {
+    display: block;
+    width: 50%;
+    padding: 25px 5px;
+    box-sizing: border-box;
+    color: $textGhosted;
+    font-size: .75rem;
+    border-top: 1px solid #f2f2f5;
+    text-transform: capitalize;
+    background-color: #fff;
+    transition: all .3s ease;
+
+    &:not(:first-child) {
+        border-left: 1px solid #f2f2f5;
+    }
+
+    &:hover {
+        background-color: #fcfcff;
+        text-decoration: underline;
+        color: $textPrimary;
+    }
+}

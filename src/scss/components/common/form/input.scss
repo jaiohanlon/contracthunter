@@ -1,0 +1,35 @@
+@import './src/scss/mixins/breakpoints';
+
+.wapper {
+
+}
+
+.input {
+    width: 100%;
+    padding: 18px 25px;
+    background: #fff;
+    border: 1px solid #e5e5e8;
+    border-radius: 0;
+    box-sizing: border-box;
+    font-size: .8rem;
+    letter-spacing: .4px;
+    font-weight: 100;
+    position: relative;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &::-webkit-input-placeholder {
+      color: #bbb;
+    }
+    &::-moz-placeholder {
+      color: #bbb;
+    }
+    &:-ms-input-placeholder {
+      color: #bbb;
+    }
+    &:-moz-placeholder {
+      color: #bbb;
+    }
+}

@@ -1,0 +1,13 @@
+@import './src/scss/mixins/breakpoints';
+
+.footer {
+    width: 100%;
+    border-top: 1px solid #f5f5f5;
+    background-color: #fff;
+    flex: 1;
+
+    @include small-up {
+        flex: 0 0 auto;
+        height: 300px;
+    }
+}

@@ -1,0 +1,32 @@
+@import 'src/scss/variables/colours';
+
+.userProfile {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        margin-top: 6px;
+        margin-left: 10px;
+        border: 4px solid transparent;
+        border-top: 5px solid $textPrimary;
+    }
+}
+
+.avatar {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: $backgroundWhite;
+    border: 1px solid $outlineGrey;
+}
+
+.name {
+    font-size: .8rem;
+}
