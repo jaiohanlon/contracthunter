@@ -3,10 +3,10 @@
 The initial stages of a React project.
 Currently contains login, register, account recovery and a dashboard.
 
-- /login
-- /register
-- /account-recovery
-- /app/dashboard
+- http://localhost:8080/login
+- http://localhost:8080/register
+- http://localhost:8080/account-recovery
+- http://localhost:8080/app/dashboard
 
 ## development
 
